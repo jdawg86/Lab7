@@ -4,6 +4,16 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "title": "Initial D",
+      "author": "Shuichi Shigeno",
+      "id": 2
+    },
+    {
+      "title": "TEST",
+      "author": "Phil",
+      "id": 3
     }
   ],
   "comments": [
