@@ -11,9 +11,19 @@
       "id": 2
     },
     {
-      "title": "TEST",
+      "title": "Fanatec",
       "author": "Phil",
       "id": 3
+    },
+    {
+      "title": "Wangan Midnight",
+      "author": "Michiharu Kusunoki",
+      "id": 4
+    },
+    {
+      "title": "Capeta",
+      "author": "Masahito Soda",
+      "id": 5
     }
   ],
   "comments": [

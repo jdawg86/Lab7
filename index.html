@@ -92,21 +92,10 @@
       var recordID = document.getElementById("recordID");
       var id = '';
 
-      function dispClear() {
+      function fetchAll() {
         recordForm.style.display = "none";
 				recordIDcontainer.style.display = "none";
-      }
 
-      function clear() {
-        output.innerHTML = "";
-        author.innerHTML = "";
-        title.innerHTML = "";
-        recordForm.innerHTML = "";
-        recordIDcontainer.innerHTML = "";
-        recordID.innerHTML = "";
-      }
-
-      function fetchAll() {
         fetch(endpoint.value)
           .then((response) => response.json())
           .then( function(data) {
@@ -123,6 +112,9 @@
       // The main difference from fetchAll() will be the URL you request from; check
       // the writeup to view the URL pattern for fetch one and fetch all
       function fetchOne() {
+        recordForm.style.display = "none";
+				recordIDcontainer.style.display = "none";
+
         id = window.prompt("Choose an id: ");
 
         fetch(endpoint.value + "/" + id)
@@ -215,6 +207,9 @@
       // request; check the writeup to view the URL pattern for get one and delete. THERE IS NO 
       // delete all, only delete one.
       function deleteRecord(rec) {
+        recordForm.style.display = "none";
+				recordIDcontainer.style.display = "none";
+
         id = window.prompt("Choose an id: ");
 
         fetch(endpoint.value + "/" + id,
